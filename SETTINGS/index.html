@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="settings-container">
+        <h1>Account Settings</h1>
+
+        <!-- Profile Settings Section -->
+        <section class="profile-settings">
+            <h2>Profile Settings</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter new username" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter new email" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter new password" required><br>
+
+                <button type="submit">Save Profile Changes</button>
+            </form>
+        </section>
+
+        <!-- Theme Settings Section -->
+        <section class="theme-settings">
+            <h2>Theme Settings</h2>
+            <form>
+                <label for="theme">Select Theme:</label>
+                <select id="theme" name="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select><br>
+
+                <button type="submit">Apply Theme</button>
+            </form>
+        </section>
+
+        <!-- Notification Settings Section -->
+        <section class="notification-settings">
+            <h2>Notification Settings</h2>
+            <form>
+                <label for="email-notifications">Email Notifications:</label>
+                <input type="checkbox" id="email-notifications" name="email-notifications" checked><br>
+
+                <label for="sms-notifications">SMS Notifications:</label>
+                <input type="checkbox" id="sms-notifications" name="sms-notifications"><br>
+
+                <button type="submit">Save Notification Settings</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>
